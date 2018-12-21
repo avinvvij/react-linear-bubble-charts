@@ -15,16 +15,48 @@ npm install --save react-linear-bubble-charts
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-linear-bubble-charts'
+import LinearBubbleChart from 'react-linear-bubble-charts'
 
 class Example extends Component {
   render () {
+    let data = [
+        {
+          title: "A",
+          value: 5
+        },
+        {
+          title: "B",
+          value: 20
+        },
+        {
+          title: "C",
+          value: 10
+        },
+        {
+          title: "D",
+          value: 30
+        }
+      ]
     return (
-      <MyComponent />
+      <LinearBubbleChart data={data} />
     )
   }
 }
 ```
+
+##Props
+
+| Prop          | Type          | Default|
+| ------------- |:-------------:| -----:|
+| data      | array | - |
+| bubbleSpacing      | number      |90|
+| maxBubbleSize | number      |35|
+| minBubbleSize | number      |12|
+| height | number      |300|
+| bubbleColor | string      |#FB6669|
+| titleColor | string      |#000000|
+| valueColor | string      |#000000|
+| onBubbleClick | function      |null|
 
 ## License
 

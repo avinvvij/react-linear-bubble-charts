@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-linear-bubble-charts'
+import LinearBubbleChart from 'react-linear-bubble-charts'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <LinearBubbleChart data={[]}/>
       </div>
     )
   }
