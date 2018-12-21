@@ -11,7 +11,7 @@ npm install --save react-linear-bubble-charts
 ```
 
 ## Image
-![alt text]()
+![alt text](https://raw.githubusercontent.com/avinvvij/react-linear-bubble-charts/master/linear%20bubble%20example.jpg)
 
 ## Usage
 
