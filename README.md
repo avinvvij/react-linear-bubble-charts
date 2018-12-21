@@ -10,6 +10,9 @@
 npm install --save react-linear-bubble-charts
 ```
 
+## Image
+![alt text]()
+
 ## Usage
 
 ```jsx
@@ -44,7 +47,7 @@ class Example extends Component {
 }
 ```
 
-##Props
+## Props
 
 | Prop          | Type          | Default|
 | ------------- |:-------------:| -----:|
