@@ -25,7 +25,8 @@ class Example extends Component {
     let data = [
         {
           title: "A",
-          value: 5
+          value: 5,
+          color: "#bc3f05"
         },
         {
           title: "B",
@@ -33,7 +34,8 @@ class Example extends Component {
         },
         {
           title: "C",
-          value: 10
+          value: 10,
+          color: "#16b4e0"
         },
         {
           title: "D",
