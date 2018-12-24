@@ -43,7 +43,7 @@ class LinearBubbleChart extends Component{
         return(
             <div>
                 <svg height = {this.state.height} width={100+(this.props.data.length * (this.state.bubbleSpacing))}>
-                    <path stroke = "white" d={"M 10 "+this.state.height/2+"L "+((this.props.data.length * this.state.bubbleSpacing)+20) +" "+this.state.height/2}></path>
+                    <path stroke = {this.props.lineColor ? this.props.lineColor:"white"} d={"M 10 "+this.state.height/2+"L "+((this.props.data.length * this.state.bubbleSpacing)+20) +" "+this.state.height/2}></path>
                     {
                         this.props.data.map((data_item , index)=>{
                             let circle_radius = Math.round((data_item.value/value_interval)+this.state.min_bubble_size)
@@ -74,7 +74,8 @@ LinearBubbleChart.propTypes = {
     valueColor: PropTypes.string,
     titlePosition: PropTypes.string,
     valuePosition: PropTypes.string,
-    onBubbleClick: PropTypes.func
+    onBubbleClick: PropTypes.func,
+    lineColor: PropTypes.string
 }
 
 export default LinearBubbleChart;
