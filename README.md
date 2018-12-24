@@ -53,7 +53,7 @@ class Example extends Component {
 ## Props
 
 | Prop          | Type          | Default| Comment|
-| ------------- |:-------------:| :-----:| -----:|
+| ------------- |:-------------:| :-----:| :-----|
 | data      | array | - | data for the component should be an array of objects with keys as title, value, color|
 | bubbleSpacing      | number      |90| spacing between each bubble|
 | maxBubbleSize | number      |35| size of the bubble with max value|
