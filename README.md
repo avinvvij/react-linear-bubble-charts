@@ -52,17 +52,17 @@ class Example extends Component {
 
 ## Props
 
-| Prop          | Type          | Default|
-| ------------- |:-------------:| -----:|
-| data      | array | - |
-| bubbleSpacing      | number      |90|
-| maxBubbleSize | number      |35|
-| minBubbleSize | number      |12|
-| height | number      |300|
-| bubbleColor | string      |#FB6669|
-| titleColor | string      |#000000|
-| valueColor | string      |#000000|
-| onBubbleClick | function      |null|
+| Prop          | Type          | Default| Comment|
+| ------------- |:-------------:| :-----:| -----:|
+| data      | array | - | data for the component should be an array of objects with keys as title, value, color|
+| bubbleSpacing      | number      |90| spacing between each bubble|
+| maxBubbleSize | number      |35| size of the bubble with max value|
+| minBubbleSize | number      |12|  size of the bubble with minimum value|
+| height | number      |300|  height of the svg element|
+| bubbleColor | string      |#FB6669| color for the bubble if individual color is not given|
+| titleColor | string      |#000000| color for the title of bubble |
+| valueColor | string      |#000000| color for the value of bubble|
+| onBubbleClick | function      |null| click event for a bubble will return index , title, value |
 
 ## License
 
