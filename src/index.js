@@ -49,7 +49,7 @@ class LinearBubbleChart extends Component{
                             let circle_radius = Math.round((data_item.value/value_interval)+this.state.min_bubble_size)
                             return(
                             <g key={index}>                                
-                                <circle onClick={this.props.onBubbleClick?()=>{this.props.onBubbleClick(index , data_item.value , data_item.title)}:null} cx={50+(index*this.state.bubbleSpacing)} cy={this.state.height/2} r={circle_radius} fill={this.props.bubbleColor? this.props.bubbleColor: "#FB6669"}></circle>
+                                <circle onClick={this.props.onBubbleClick?()=>{this.props.onBubbleClick(index , data_item.value , data_item.title)}:null} cx={50+(index*this.state.bubbleSpacing)} cy={this.state.height/2} r={circle_radius} fill={data_item.color ? data_item.color : this.props.bubbleColor? this.props.bubbleColor: "#FB6669"}></circle>
                                 <text fill={this.props.valueColor? this.props.valueColor:"black"} x={(45-(data_item.value.toString().length * 2))+(index*this.state.bubbleSpacing)} y= {this.state.height/2 - circle_radius - 20}>{data_item.value}</text>
                                 <text fill={this.props.titleColor?this.props.titleColor:"black"} x={(45-(data_item.title.length * 2))+(index*this.state.bubbleSpacing)} y= {this.state.height/2 + circle_radius + 20}>{data_item.title}</text>
                             </g>

@@ -1,6 +1,6 @@
 {
   "name": "react-linear-bubble-charts",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A linear bubble chart for reactjs",
   "author": "",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "homepage": "https://github.com/avinvvij/react-linear-bubble-charts",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
