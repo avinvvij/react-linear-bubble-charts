@@ -62,6 +62,7 @@ class Example extends Component {
 | bubbleColor | string      |#FB6669| color for the bubble if individual color is not given|
 | titleColor | string      |#000000| color for the title of bubble |
 | valueColor | string      |#000000| color for the value of bubble|
+| lineColor | string      |#ffffff| color for the base line|
 | onBubbleClick | function      |null| click event for a bubble will return index , title, value |
 
 ## License
