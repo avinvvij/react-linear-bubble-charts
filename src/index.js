@@ -43,10 +43,14 @@ class LinearBubbleChart extends Component{
         return(
             <div>
                 <svg height = {this.state.height} width={100+(this.props.data.length * (this.state.bubbleSpacing))}>
-                    <path stroke = {this.props.lineColor ? this.props.lineColor:"white"} d={"M 10 "+this.state.height/2+"L "+((this.props.data.length * this.state.bubbleSpacing)+20) +" "+this.state.height/2}></path>
+                    <path strokeWidth = {this.props.lineWidth ? this.props.lineWidth+"px": '1px'} stroke = {this.props.lineColor ? this.props.lineColor:"white"} d={"M 10 "+this.state.height/2+"L "+((this.props.data.length * this.state.bubbleSpacing)+20) +" "+this.state.height/2}></path>
                     {
                         this.props.data.map((data_item , index)=>{
                             let circle_radius = Math.round((data_item.value/value_interval)+this.state.min_bubble_size)
+                            if(value_interval == 0){
+                                circle_radius = this.state.max_bubble_size
+                            }
+                            
                             return(
                             <g key={index}>                                
                                 <circle onClick={this.props.onBubbleClick?()=>{this.props.onBubbleClick(index , data_item.value , data_item.title)}:null} cx={50+(index*this.state.bubbleSpacing)} cy={this.state.height/2} r={circle_radius} fill={data_item.color ? data_item.color : this.props.bubbleColor? this.props.bubbleColor: "#FB6669"}></circle>
@@ -75,7 +79,8 @@ LinearBubbleChart.propTypes = {
     titlePosition: PropTypes.string,
     valuePosition: PropTypes.string,
     onBubbleClick: PropTypes.func,
-    lineColor: PropTypes.string
+    lineColor: PropTypes.string,
+    lineWidth : PropTypes.number
 }
 
 export default LinearBubbleChart;
