@@ -64,6 +64,7 @@ class Example extends Component {
 | valueColor | string      |#000000| color for the value of bubble|
 | lineColor | string      |#ffffff| color for the base line|
 | lineWidth | number      |1| width for the base line|
+| wordWrap | bool      |false| Will put the word after space in a new line|
 | onBubbleClick | function      |null| click event for a bubble will return index , title, value |
 
 ##Author
